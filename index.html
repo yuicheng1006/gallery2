@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photo</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 導覽列 -->
+        <div class="nav">
+            <div class="hambuger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <!-- 作者 -->
+            <div class="user-name"></div>
+            <!-- 導覽列表 -->
+            <ul class="nav-bar">
+                <li class="nav-bar-item">
+                    <a href="#">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-bar-item">
+                    <a href="#">
+                        <span>Blog</span>
+                    </a>
+                </li>
+                <li class="nav-bar-item">
+                    <a href="#">
+                        <span>Gallery</span>
+                    </a>
+                </li>
+                <li class="nav-bar-item">
+                    <a href="#">
+                        <span>Portfolio</span>
+                    </a>
+                </li>
+                <li class="nav-bar-item">
+                    <a href="#">
+                        <span>Posts</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- 相簿列表 -->
+        <div class="gallery-wrap">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item">Gallery</li>
+                <li class="breadcrumb-item">/</li>
+                <li class="breadcrumb-item">Animals</li>
+            </ul>
+            <!-- 相片 -->
+            <ul class="gallery">
+                <!-- <li class="gallery-item">
+                    <div class="item-image"></div>
+                    <span>Little cutie</span>
+                </li>
+                <li class="gallery-item">
+                    <div class="item-image"></div>
+                    <div class="item-name">
+                        <span>Little cutie</span>
+                    </div>
+                </li>
+                <li class="gallery-item">
+                    <div class="item-image"></div>
+                    <div class="item-name">
+                        <span>Little cutie</span>
+                    </div>
+                </li>
+                <li class="gallery-item">
+                    <div class="item-image"></div>
+                    <div class="item-name">
+                        <span>Little cutie</span>
+                    </div>
+                </li>
+                <li class="gallery-item">
+                    <div class="item-image"></div>
+                    <div class="item-name">
+                        <span>Little cutie</span>
+                    </div>
+                </li>
+                <li class="gallery-item">
+                    <div class="item-image"></div>
+                    <div class="item-name">
+                        <span>Little cutie</span>
+                    </div>
+                </li>
+                <li class="gallery-item">
+                    <div class="item-image"></div>
+                    <div class="item-name">
+                        <span>Little cutie</span>
+                    </div>
+                </li>
+                <li class="gallery-item">
+                    <div class="item-image"></div>
+                    <div class="item-name">
+                        <span>Little cutie</span>
+                    </div>
+                </li> -->
+            </ul>
+            <!-- 分頁 -->
+            <ul class="pagination">
+                <li class="page-item"><a href="#">1</a></li>
+                <li class="page-item"><a href="#">2</a></li>
+                <li class="page-item"><a href="#">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="background-cover"></div>
+        <div class="lightbox">
+            <div class="img-cover">
+                <div class=" arrow pre-arrow">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="slide-img"></div>
+                <div class="arrow next-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="img-info">
+                <div class="img-name">little cutie</div>
+                <div class="photo-len">
+                    <div class="photo-curren">1</div>
+                    <div>/</div>
+                    <div class="photo-total">3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="all.js"></script>
+
+</body>
+
+</html>

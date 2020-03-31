@@ -1,0 +1,245 @@
+* {
+    /* outline: 1px dotted red; */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    border: none;
+}
+
+.wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-name {
+    font-size: 60px;
+    font-family: 'Caveat', cursive;
+    margin: 20px 40px;
+    letter-spacing: 3.5px;
+}
+
+.nav-bar {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar-item a,
+.page-item a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-bar-item span {
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.hambuger {
+    display: none;
+}
+
+.gallery-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.breadcrumb {
+    width: 10%;
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.gallery-item {
+    width: 22%;
+    margin: 15px;
+    cursor: pointer;
+    box-shadow: 2px 2px 9px 0 rgba(0, 0, 0, 0.18);
+    border-radius: 10px;
+}
+
+.item-image {
+    background-image: url('https://cdn.hk01.com/di/media/images/564720/org/7a5b31ccd89a2360794c1ef6bf54393f.jpg/0ws2YFTJcguqJ5hF1Hp3V8ELwZfAP_rMiLU2UYi1NlE?v=w1920');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.item-image:hover {
+    background-size: 100%;
+    transition: .3s ease-in-out;
+}
+
+.item-name {
+    background-color: #F7F7F7;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.gallery-item span {
+    line-height: 50px;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 40px 6px 0px;
+
+}
+
+.page-item {
+    margin: 0px 5px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.background-cover {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.lightbox {
+    position: fixed;
+    display: none;
+    width: 100%;
+    align-self: center;
+    position: absolute;
+    flex-direction: column;
+
+}
+
+.img-cover {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 50px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.slide-img {
+    width: 50%;
+    background-image: url('https://cdn.hk01.com/di/media/images/564720/org/7a5b31ccd89a2360794c1ef6bf54393f.jpg/0ws2YFTJcguqJ5hF1Hp3V8ELwZfAP_rMiLU2UYi1NlE?v=w1920');
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+    height: 450px;
+}
+
+.img-info {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+}
+
+.img-info,
+.photo-len {
+    display: flex;
+}
+
+/* -------------RWD-------------- */
+
+/* 平板 */
+@media (min-width: 768px) and (max-width: 1000px) {
+    .breadcrumb {
+        margin-left: 100px;
+    }
+
+    .pagination {
+        justify-content: center;
+        margin-right: 0px;
+    }
+
+    .item-image {
+        height: 150px;
+
+    }
+
+}
+
+/* 手機 */
+@media (min-width: 375px) and (max-width: 767px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .nav {
+        flex-direction: unset;
+        justify-content: center;
+        position: relative;
+    }
+
+    .hambuger {
+        display: flex;
+        position: absolute;
+        left: 20px;
+        font-size: 30px;
+    }
+
+    .gallery-item {
+        width: 100%;
+        margin: 15px;
+    }
+
+    .pagination {
+        justify-content: center;
+        margin-right: 0px;
+    }
+
+    .breadcrumb {
+        width: 100%;
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+}
